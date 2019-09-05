@@ -37,6 +37,12 @@ public class IPWhitelist extends JavaPlugin {
             this.getConfig().set("setup", false);
             this.saveConfig();
         }
+        
+        try {
+        	new HandshakeListener(this);
+        }catch(Exception | Error e) {
+        	e.printStackTrace();
+        }
     }
 
     private void reloadBukkitConfig() {

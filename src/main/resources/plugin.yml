@@ -2,7 +2,7 @@ name: IPWhitelist
 author: roblabla
 version: ${project.version}
 main: net.craftminecraft.bukkit.ipwhitelist.IPWhitelist
-
+soft-depend: [ProtocolLib]
 commands:
   ipwhitelist:
     description: IPWhitelist main command. Use /bungeejoin to get more help.
